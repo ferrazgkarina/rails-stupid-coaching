@@ -1,1 +1,29 @@
+<div style="padding: 16px;">
+  <h2>Stupid Coaching</h2>
+</div>
+
+<div class="p-2 m-3 bg-white border-start border-4 border-secondary">
+  <figure>
+    <blockquote class="blockquote">
+      <p><%= @question %></p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      <em>You</em>
+    </figcaption>
+  </figure>
+</div>
+
+<div class="p-2 m-3 bg-warning-subtle border-start border-4 border-secondary">
+  <figure>
+    <blockquote class="blockquote">
+      <p><%= @answer %></p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      <em>Your coach</em>
+    </figcaption>
+  </figure>
+</div>
+
+<div class="m-3">
 <%= link_to 'Ask a new question', ask_path %>
+</div>

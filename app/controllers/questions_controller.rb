@@ -1,5 +1,3 @@
 class QuestionsController < ApplicationController
-
- 
-
+  
 end

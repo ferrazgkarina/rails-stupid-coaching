@@ -3,6 +3,15 @@ class PagesController < ApplicationController
   end
 
   def answer
-  end
+    @question = params[:question].to_s
 
+  @answer =
+    if @question == "Hello"
+      "Great"
+    elsif @question.end_with?("?")
+      "Silly question, get dressed and go to work"
+    else
+      "I don't care, get dressed and go to work"
+    end
+  end
 end
